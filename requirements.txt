@@ -1,5 +1,6 @@
 ﻿fastapi
 uvicorn[standard]
+gunicorn 
 sqlalchemy>=2
 pymysql
 python-dotenv
