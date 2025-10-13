@@ -1,6 +1,10 @@
 ﻿# backend/main.py
 from fastapi import FastAPI
 from db.session import Base, engine
+from dotenv import load_dotenv
+import os
+
+load_dotenv() 
 
 Base.metadata.create_all(bind=engine)
 
