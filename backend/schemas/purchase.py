@@ -1,6 +1,6 @@
 ﻿# backend/schemas/purchase.py
 from pydantic import BaseModel, Field
-from typing import List
+# from typing import List
 
 class PurchaseItem(BaseModel):
     code: str
@@ -10,7 +10,7 @@ class PurchaseRequest(BaseModel):
     empCd: str
     storeCd: str
     posNo: str
-    items: List[PurchaseItem]
+    items: list[PurchaseItem]
 
 class PurchaseResult(BaseModel):
     success: bool
