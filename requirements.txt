@@ -5,3 +5,5 @@ sqlalchemy>=2
 pymysql
 python-dotenv
 pydantic>=2
+typing
+pathlib
