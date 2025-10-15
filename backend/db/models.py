@@ -1,7 +1,7 @@
 ﻿# backend/db/models.py
 from sqlalchemy import Column, Integer, String, CHAR, TIMESTAMP, ForeignKey, func
 from sqlalchemy.orm import relationship
-from .session import Base
+from db.session import Base
 
 class Product(Base):
     __tablename__ = "products"
